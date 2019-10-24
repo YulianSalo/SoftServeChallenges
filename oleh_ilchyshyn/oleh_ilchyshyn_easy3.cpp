@@ -3,17 +3,24 @@
 
 using namespace std;
 
-int main()
+
+long long SimpleAdding(int n)
 {
-	int n;
-	cin >> n;
 	long long sum = 0;
 	for (auto i{ 1 }; i <= n; ++i)
 	{
 		sum += i;
 	}
+	return sum;
+}
 
-	cout << sum;
+int main()
+{
+	int n;
+	cin >> n;
+	
+
+	cout << SimpleAdding(n);
 
 	return 0;
 }
