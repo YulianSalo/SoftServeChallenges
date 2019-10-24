@@ -20,6 +20,7 @@ class Main{
       result.append(str.charAt(i));
       }
     }
+      return result;
   }
-  return result;
+
 }
