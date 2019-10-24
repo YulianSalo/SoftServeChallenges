@@ -3,10 +3,8 @@
 
 using namespace std;
 
-int main()
+string LongestWord(string input)
 {
-	string input;
-	getline(cin, input);
 	input += " ";
 	string str = "";
 	string max_s = "";
@@ -23,7 +21,17 @@ int main()
 			str = "";
 		}
 	}
-	cout << max_s;
+
+	return max_s;
+
+}
+
+int main()
+{
+	string input;
+	getline(cin, input);
+	
+	cout << LongestWord(input);
 
 
 	return 0;
